@@ -1,6 +1,7 @@
-.App {
+/* .App {
   text-align: center;
-}
+  display: flex;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +36,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Target the canvas directly if it's the direct child of a specific container */
+.container > canvas {
+  width: 100%; /* Take up the full width of the parent */
+  height: 400px; /* Static height, but you can make this dynamic or responsive */
+  border: 1px solid #ddd; /* Optional border around the chart */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a little depth */
+}
+
+/* Or, if you're using a class or ID on the <Line /> component, you can target it directly */
+.line-chart {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
